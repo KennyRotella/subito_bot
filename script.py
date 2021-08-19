@@ -16,7 +16,7 @@ for dir in dirs:
         if file.endswith(".jpg"):
             images.append(os.path.join(cwd, dir, file))
 
-    f = open(os.path.join(dir,'data.json'),)
+    f = open(os.path.join(dir,'data.json'), encoding='utf-8')
     data = json.load(f)
 
     driver.delete_all_cookies()
