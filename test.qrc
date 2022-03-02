@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>subito-logo-vector.svg</file>
+  </qresource>
+</RCC>
