@@ -347,7 +347,7 @@ border-radius: 5px;</string>
           <property name="geometry">
            <rect>
             <x>280</x>
-            <y>15</y>
+            <y>2</y>
             <width>120</width>
             <height>75</height>
            </rect>
@@ -366,11 +366,11 @@ border-radius: 5px;</string>
           </property>
           <property name="font">
            <font>
-            <family>Dyuthi</family>
-            <pointsize>58</pointsize>
-            <weight>50</weight>
+            <family>Segoe UI Black</family>
+            <pointsize>48</pointsize>
+            <weight>75</weight>
             <italic>true</italic>
-            <bold>false</bold>
+            <bold>true</bold>
            </font>
           </property>
           <property name="text">
@@ -500,7 +500,7 @@ border-radius: 5px;</string>
               <rect>
                <x>0</x>
                <y>0</y>
-               <width>486</width>
+               <width>483</width>
                <height>1052</height>
               </rect>
              </property>
@@ -587,6 +587,8 @@ background-color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="font">
                   <font>
+                   <family>Arial Black</family>
+                   <pointsize>9</pointsize>
                    <weight>75</weight>
                    <bold>true</bold>
                   </font>
@@ -609,6 +611,12 @@ background-color: rgb(255, 255, 255);</string>
                    <width>335</width>
                    <height>21</height>
                   </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
@@ -770,6 +778,8 @@ background-color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="font">
                   <font>
+                   <family>Arial Black</family>
+                   <pointsize>9</pointsize>
                    <weight>75</weight>
                    <bold>true</bold>
                   </font>
@@ -792,6 +802,12 @@ background-color: rgb(255, 255, 255);</string>
                    <width>335</width>
                    <height>21</height>
                   </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
@@ -913,6 +929,8 @@ background-color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="font">
                   <font>
+                   <family>Arial Black</family>
+                   <pointsize>9</pointsize>
                    <weight>75</weight>
                    <bold>true</bold>
                   </font>
@@ -935,6 +953,12 @@ background-color: rgb(255, 255, 255);</string>
                    <width>335</width>
                    <height>21</height>
                   </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
@@ -1011,6 +1035,8 @@ background-color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="font">
                   <font>
+                   <family>Arial Black</family>
+                   <pointsize>9</pointsize>
                    <weight>75</weight>
                    <bold>true</bold>
                   </font>
@@ -1033,6 +1059,12 @@ background-color: rgb(255, 255, 255);</string>
                    <width>335</width>
                    <height>19</height>
                   </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
@@ -1254,6 +1286,12 @@ background-color: rgb(255, 255, 255);</string>
                    <height>23</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
                  </property>
@@ -1287,6 +1325,8 @@ background-color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="font">
                   <font>
+                   <family>Arial Black</family>
+                   <pointsize>9</pointsize>
                    <weight>75</weight>
                    <bold>true</bold>
                   </font>
@@ -1351,6 +1391,8 @@ background-color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="font">
                   <font>
+                   <family>Arial Black</family>
+                   <pointsize>9</pointsize>
                    <weight>75</weight>
                    <bold>true</bold>
                   </font>
@@ -1385,6 +1427,12 @@ background-color: rgb(255, 255, 255);</string>
                    <width>350</width>
                    <height>65</height>
                   </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
@@ -1441,6 +1489,12 @@ background-color: rgb(255, 255, 255);</string>
                    <height>23</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
                  </property>
@@ -1477,6 +1531,8 @@ background-color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="font">
                   <font>
+                   <family>Arial Black</family>
+                   <pointsize>9</pointsize>
                    <weight>75</weight>
                    <bold>true</bold>
                   </font>
@@ -1526,6 +1582,12 @@ background-color: rgb(255, 255, 255);</string>
                    <width>221</width>
                    <height>23</height>
                   </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
@@ -1579,6 +1641,12 @@ background-color: rgb(255, 255, 255);</string>
                    <height>23</height>
                   </rect>
                  </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
                  </property>
@@ -1600,6 +1668,12 @@ background-color: rgb(255, 255, 255);</string>
                    <width>221</width>
                    <height>23</height>
                   </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
@@ -1653,6 +1727,12 @@ background-color: rgb(255, 255, 255);</string>
                    <height>23</height>
                   </rect>
                  </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
                  </property>
@@ -1675,6 +1755,12 @@ background-color: rgb(255, 255, 255);</string>
                    <height>23</height>
                   </rect>
                  </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
                  </property>
@@ -1696,6 +1782,12 @@ background-color: rgb(255, 255, 255);</string>
                    <width>221</width>
                    <height>23</height>
                   </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
@@ -1755,6 +1847,12 @@ background-color: rgb(255, 255, 255);</string>
                    <height>23</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
                  </property>
@@ -1788,6 +1886,8 @@ background-color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="font">
                   <font>
+                   <family>Arial Black</family>
+                   <pointsize>9</pointsize>
                    <weight>75</weight>
                    <bold>true</bold>
                   </font>
@@ -1850,6 +1950,12 @@ background-color: rgb(255, 255, 255);</string>
                    <height>23</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
                  </property>
@@ -1883,6 +1989,8 @@ background-color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="font">
                   <font>
+                   <family>Arial Black</family>
+                   <pointsize>9</pointsize>
                    <weight>75</weight>
                    <bold>true</bold>
                   </font>
@@ -1945,6 +2053,12 @@ background-color: rgb(255, 255, 255);</string>
                    <height>23</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
                  </property>
@@ -1978,6 +2092,8 @@ background-color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="font">
                   <font>
+                   <family>Arial Black</family>
+                   <pointsize>9</pointsize>
                    <weight>75</weight>
                    <bold>true</bold>
                   </font>
@@ -2025,6 +2141,12 @@ background-color: rgb(255, 255, 255);</string>
                    <width>352</width>
                    <height>14</height>
                   </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
                  </property>
                  <property name="styleSheet">
                   <string notr="true"/>
@@ -2084,6 +2206,12 @@ background-color: rgb(255, 255, 255);</string>
                    <height>23</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">border: 0px;</string>
                  </property>
@@ -2117,6 +2245,8 @@ background-color: rgb(255, 255, 255);</string>
                  </property>
                  <property name="font">
                   <font>
+                   <family>Arial Black</family>
+                   <pointsize>9</pointsize>
                    <weight>75</weight>
                    <bold>true</bold>
                   </font>
@@ -2164,6 +2294,12 @@ background-color: rgb(255, 255, 255);</string>
                    <width>352</width>
                    <height>14</height>
                   </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>9</pointsize>
+                  </font>
                  </property>
                  <property name="text">
                   <string>Nascondi il numero</string>
