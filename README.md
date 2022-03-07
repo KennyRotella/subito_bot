@@ -1,7 +1,7 @@
 # Subito Bot
 
 ## About The Project
-[![Subito Bot Screen Shot][product-screenshot]](https://example.com)
+![Subito Bot Screen Shot](images/screenshot.png)
 
 This project helps to speed-up insertion and filling of advertisments on the website [Subito.it](https://www.subito.it/)
 
@@ -15,12 +15,12 @@ This project helps to speed-up insertion and filling of advertisments on the web
 1. ***Important*** These portables are built for chrome version 99, check your version (chrome://settings/help)
 2. Download the portable package based on your OS [Windows] or [Linux](https://github.com/KennyRotella/subito_bot/blob/main/portable_builds/LinuxBuild.zip)
 3. Edit `Credenziali.ini` with your credentials under [credenziali] section
-4. Insert all information needed for your advertisment (there may be more fields in the GUI than needed)
+4. Insert all information needed for your advertisment (there may be more fields in the GUI than needed) ***Tipologia*** field is the number of the dropdown menu option on Subito
 5. Once filled all fields click on the red button "Inserisci annuncio", do this for every advertisment
-6. Once all your advertisments are inserted click on the blue button "Avvia BOT"
+6. Once all your advertisments are inserted click on the blue button "Avvia BOT" (remember to remove old advertisments)
 7. Enjoy! (Hopefully)
 
-### Build from source on Linux
+### Build from source on Windows/Linux
 1. Clone the repo
 ```sh
    git clone https://github.com/KennyRotella/subito_bot.git
