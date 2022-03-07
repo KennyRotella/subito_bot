@@ -13,7 +13,7 @@ This project helps to speed-up insertion and filling of advertisments on the web
 ## Getting Started
 ### Prerequisites
 1. ***Important*** These portables are built for chrome version 99, check your version (chrome://settings/help)
-2. Download the portable package based on your OS [Windows](https://github.com/KennyRotella/subito_bot/blob/main/portable_builds/WindowsBuild.zip) or [Linux](https://github.com/KennyRotella/subito_bot/blob/main/portable_builds/LinuxBuild.zip)
+2. Download the portable package based on your OS [Windows](https://github.com/KennyRotella/subito_bot/releases/download/Latest/Windows.portable.zip) or [Linux](https://github.com/KennyRotella/subito_bot/releases/download/Latest/Linux.portable.zip)
 3. Edit `Credenziali.ini` with your credentials under [credenziali] section
 4. Insert all information needed for your advertisment (there may be more fields in the GUI than needed) ***Tipologia*** field is the number of the dropdown menu option on Subito
 5. Once filled all fields click on the red button "Inserisci annuncio", do this for every advertisment
