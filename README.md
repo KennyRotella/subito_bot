@@ -39,8 +39,13 @@ This project helps to speed-up insertion and filling of advertisments on the web
 - Download the latest release of chrome driver [here](https://chromedriver.chromium.org/downloads) based on your Chrome browser version (chrome://settings/help)
 - Place your downloaded `chromedriver.exe` into a folder called `driver`
 5. Making a .spec file for PyInstaller
+- Linux
 ```sh
    pyi-makespec main.py --onefile --noconsole --add-binary "driver/chromedriver:driver/" --add-data "Credenziali.ini:." --name subito-bot
+```
+- Windows
+```sh
+   pyi-makespec main.py --onefile --noconsole --add-binary "driver\chromedriver.exe;driver\" --add-data "Credenziali.ini;." --name subito-bot
 ```
 6. Run pyinstaller command
 ```sh
@@ -48,4 +53,4 @@ This project helps to speed-up insertion and filling of advertisments on the web
 ```
 - You may find the exe inside the dist folder. Run the subito-bot.exe to try it out
 - Modify the `Credenziali.ini` with your credentials and put it inside the same executable folder
-- If you are on Windows change commands accordingly to this [guide](https://medium.com/technology-hits/easily-distribute-python-selenium-applications-with-pyinstaller-ef276844ad2d)
+- This [guide](https://medium.com/technology-hits/easily-distribute-python-selenium-applications-with-pyinstaller-ef276844ad2d) was used for packaging
