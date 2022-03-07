@@ -1,9 +1,33 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QFileDialog, QWidget, QMainWindow
 from ui_main import Ui_SubitoBot
+import traceback
 import json
 from bot import startBot
 import sys
+
+category_id_map = {
+    "Accessori Auto": 5,
+    "Accessori Moto": 36,
+    "Veicoli commerciali": 4,
+    "Informatica": 10,
+    "Console e Videogiochi": 44,
+    "Audio/Video": 11,
+    "Fotografia": 40,
+    "Telefonia": 12,
+    "Arredamento e Casalinghi": 14,
+    "Elettrodomestici": 37,
+    "Giardino e Fai da te": 15,
+    "Abbigliamento e Accessori": 16,
+    "Animali": 23,
+    "Musica e Film": 19,
+    "Libri e Riviste": 38,
+    "Strumenti Musicali": 39,
+    "Sports": 20,
+    "Biciclette": 41,
+    "Collezionismo": 21,
+    "Altri": 28
+}
 
 class Item(QtWidgets.QFrame):
     def __init__(self, scrollAreaItems, title, image, mainWindow):
@@ -56,12 +80,53 @@ class MainWindow(QMainWindow, Ui_SubitoBot):
         self.selectImages.clicked.connect(self.openFileNamesDialog)
         self.insertButton.clicked.connect(self.pushConfirmButton)
         self.startButton.clicked.connect(self.startBot)
+        self.toDeliver.toggled.connect(self.onDeliverClick)
+
+        self.category.setEditable(True)
+        self.category.lineEdit().setAlignment(QtCore.Qt.AlignCenter)
+        self.category.lineEdit().setReadOnly(True)
+
+        self.type.setEditable(True)
+        self.type.lineEdit().setAlignment(QtCore.Qt.AlignCenter)
+        self.type.lineEdit().setReadOnly(True)
+
+        self.gender.setEditable(True)
+        self.gender.lineEdit().setAlignment(QtCore.Qt.AlignCenter)
+        self.gender.lineEdit().setReadOnly(True)
+
+        self.condition.setEditable(True)
+        self.condition.lineEdit().setAlignment(QtCore.Qt.AlignCenter)
+        self.condition.lineEdit().setReadOnly(True)
+
+        self.buttonGroup.setId(self.tuttoSubito,0)
+        self.buttonGroup.setId(self.deliveryDIY,1)
+
+        self.buttonGroup_2.setId(self.smallSize,10)
+        self.buttonGroup_2.setId(self.mediumSize,20)
+        self.buttonGroup_2.setId(self.bigSize,30)
 
         self.items = []
         self.ui_items = []
         self.getJSON()
 
         self.show()
+
+    def onDeliverClick(self):
+        cbutton = self.sender()
+        if cbutton.isChecked():
+            self.tuttoSubito.setEnabled(True)
+            self.deliveryDIY.setEnabled(True)
+            self.smallSize.setEnabled(True)
+            self.mediumSize.setEnabled(True)
+            self.bigSize.setEnabled(True)
+            print("delivery enabled")
+        else:
+            self.tuttoSubito.setEnabled(False)
+            self.deliveryDIY.setEnabled(False)
+            self.smallSize.setEnabled(False)
+            self.mediumSize.setEnabled(False)
+            self.bigSize.setEnabled(False)
+            print("delivery disabled")
 
     def openFileNamesDialog(self):
         options = QFileDialog.Options()
@@ -96,10 +161,18 @@ class MainWindow(QMainWindow, Ui_SubitoBot):
     def pushConfirmButton(self):
         try:
             dictFields = {
+                "categoria":    category_id_map[self.category.currentText()],
+                "tipologia":    self.type.currentIndex()+1,
+                "per":          self.gender.currentIndex()+1,
+                "condizione":   (self.condition.currentIndex()+1)*10,
                 "immagini":     self.imageFiles,
                 "titolo":       self.title.text(),
                 "descrizione":  self.description.toPlainText(),
                 "prezzo":       self.price.text(),
+                "dispSped":     self.toDeliver.isChecked(),
+                "tipoSped":     self.buttonGroup.checkedId(),
+                "dimSped":      self.buttonGroup_2.checkedId(),
+                "costoSped":    self.shippingCost.text(),
                 "comune":       self.city.text(),
                 "indirizzo":    self.address.text(),
                 "nascondiIndirizzo": self.addressCheckBox.isChecked(),
@@ -111,6 +184,7 @@ class MainWindow(QMainWindow, Ui_SubitoBot):
             self.updateJSON()
         except Exception as e:
             print(e)
+            traceback.print_exc()
 
         print("\n".join([str(x) for x in self.items]))
 
