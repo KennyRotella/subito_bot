@@ -12,7 +12,7 @@ This project helps to speed-up insertion and filling of advertisments on the web
 
 ## Getting Started
 ### Prerequisites
-1. ***Important*** These portables are built for chrome version 99.0.4844.51, check your version (chrome://settings/help)
+1. ***Important*** These portables are built for chrome version 99, check your version (chrome://settings/help)
 2. Download the portable package based on your OS [Windows] or [Linux](https://github.com/KennyRotella/subito_bot/blob/main/portable_builds/LinuxBuild.zip)
 3. Edit `Credenziali.ini` with your credentials under [credenziali] section
 4. Insert all information needed for your advertisment (there may be more fields in the GUI than needed)
@@ -37,10 +37,15 @@ This project helps to speed-up insertion and filling of advertisments on the web
 ```
 4. Downloading chromedriver
 - Download the latest release of chrome driver [here](https://chromedriver.chromium.org/downloads) based on your Chrome browser version (chrome://settings/help)
-- Place your downloaded `chromedriver.exe` into the folder called `driver`
+- Place your downloaded `chromedriver.exe` into a folder called `driver`
 5. Making a .spec file for PyInstaller
+- Linux
 ```sh
    pyi-makespec main.py --onefile --noconsole --add-binary "driver/chromedriver:driver/" --add-data "Credenziali.ini:." --name subito-bot
+```
+- Windows
+```sh
+   pyi-makespec main.py --onefile --noconsole --add-binary "driver\chromedriver.exe;driver\" --add-data "Credenziali.ini;." --name subito-bot
 ```
 6. Run pyinstaller command
 ```sh
@@ -48,4 +53,4 @@ This project helps to speed-up insertion and filling of advertisments on the web
 ```
 - You may find the exe inside the dist folder. Run the subito-bot.exe to try it out
 - Modify the `Credenziali.ini` with your credentials and put it inside the same executable folder
-- If you are on Windows change commands accordingly to this [guide](https://medium.com/technology-hits/easily-distribute-python-selenium-applications-with-pyinstaller-ef276844ad2d)
+- This [guide](https://medium.com/technology-hits/easily-distribute-python-selenium-applications-with-pyinstaller-ef276844ad2d) was used for packaging
