@@ -37,7 +37,7 @@ This project helps to speed-up insertion and filling of advertisments on the web
 ```
 4. Downloading chromedriver
 - Download the latest release of chrome driver [here](https://chromedriver.chromium.org/downloads) based on your Chrome browser version (chrome://settings/help)
-- Place your downloaded `chromedriver.exe` into the folder called `driver`
+- Place your downloaded `chromedriver.exe` into a folder called `driver`
 5. Making a .spec file for PyInstaller
 ```sh
    pyi-makespec main.py --onefile --noconsole --add-binary "driver/chromedriver:driver/" --add-data "Credenziali.ini:." --name subito-bot
