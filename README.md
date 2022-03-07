@@ -20,7 +20,7 @@ This project helps to speed-up insertion and filling of advertisments on the web
 6. Once all your advertisments are inserted click on the blue button "Avvia BOT" (remember to remove old advertisments)
 7. Enjoy! (Hopefully)
 
-### Build from source on Linux
+### Build from source on Windows/Linux
 1. Clone the repo
 ```sh
    git clone https://github.com/KennyRotella/subito_bot.git
