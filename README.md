@@ -7,6 +7,7 @@ This project helps to speed-up insertion and filling of advertisments on the web
 * [Selenium](https://www.selenium.dev/)
 
 ### Usage
+update credentials.json file then:
 ```
 pip install -r requirements.txt
 python main.py [list|add]

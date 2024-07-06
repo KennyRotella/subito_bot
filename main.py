@@ -5,6 +5,7 @@ import json
 import os
 import sys
 import shutil
+import time
 
 from utils import *
 
@@ -110,6 +111,12 @@ def create_new_adv():
     items = [x for x in items if x['id'] != template['id']]
     items.append(template)
 
+    # backup old items file
+    timestr = time.strftime("%Y%m%d%H%M%S")
+    backup_items_file = os.path.join(os.path.dirname(filepath_items), f"{timestr}_{os.path.basename(filepath_items)}")
+    shutil.copyfile(filepath_items, backup_items_file)
+
+    # overwrite items file
     with open(filepath_items, 'w') as f:
         json.dump(items, f, indent=2)
 

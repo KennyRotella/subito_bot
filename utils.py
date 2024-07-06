@@ -2,9 +2,7 @@ from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from difflib import SequenceMatcher
-
-EMAIL = ''
-PASSWORD = ''
+import json
 
 CATEGORIES = {
     2: "Auto",
@@ -160,10 +158,15 @@ def type_text(driver, name, text):
         sleep(1)
 
 def login(driver):
+
+    # read credentials
+    with open('credentials.json', 'r') as f:
+        credentials = json.load(f)
+
     driver.get('https://areariservata.subito.it/login_form')
     get_gui(driver, 'accetta').click()
-    type_text(driver, 'email', EMAIL)
-    type_text(driver, 'password', PASSWORD)
+    type_text(driver, 'email', credentials['EMAIL'])
+    type_text(driver, 'password', credentials['PASSWORD'])
     get_gui(driver, 'accedi').click()
 
 def page1(driver, data):
